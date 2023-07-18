@@ -14,3 +14,5 @@ This project is totally based on modular approach.
  Database Layer(3rd tier): A RDS mysql databases is configured in a private subnet. Used AWS secrets Manager for storing DB's username and password.
 
 The VPC is created using a module from terraform module registry.
+
+Used DynamoDB for state locking and s3 bucket for storing the terraform.tfstate file remotely.
